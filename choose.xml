@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="horizontal"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/g3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.65"
+        android:orientation="horizontal"
+        />
+    <TextView
+        android:id="@+id/chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 "
+        android:textSize="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/g1"
+        app:layout_constraintLeft_toRightOf="@+id/g2"
+        />
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="Choose"
+        app:layout_constraintLeft_toRightOf="@+id/g2"
+        app:layout_constraintTop_toBottomOf="@+id/chooser"
+        android:layout_marginTop="35dp"
+        />
+
+    <Button
+        android:id="@+id/xbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="35dp"
+        app:layout_constraintLeft_toRightOf="@+id/g2"
+        app:layout_constraintTop_toBottomOf="@+id/g3"
+
+        />
+    <Button
+        android:id="@+id/obutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textSize="35dp"
+        app:layout_constraintLeft_toRightOf="@+id/xbutton"
+        app:layout_constraintTop_toBottomOf="@+id/g3"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
